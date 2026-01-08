@@ -1,5 +1,4 @@
 /* index.css */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -7,9 +6,48 @@
   box-sizing: border-box;
 }
 
+:root{
+   --font-raleway: 'Raleway', sans-serif;
+   --font-manrope: 'Manrope', sans-serif;
+   --gradient-text-primary: linear-gradient(
+    90deg,
+  #CD6028
+   #3E6EB4
+  ); 
+
+
+}
 h1{
   font-size: 48px;
   line-height: 68.25px;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-raleway);
+}
+
+h2{
+  font-size: 48px;
+  font-weight: 600;
+  font-family: var(--font-raleway);
+  line-height: 100%;
+}
+
+h3{
+  font-size: 24px;
+  font-family: var(--font-manrope);
+  line-height: 100%;
+  font-weight: 700;
+}
+
+h4{
+  font-size: 32px;
+  font-family: var(--font-raleway);
+  line-height: 48px;
+  font-weight: 700;
+}
+
+p{
+  font-size:20px;
+  font-family: var(--font-manrope);
+  line-height: 30px;
+  font-weight: 500;
 }
