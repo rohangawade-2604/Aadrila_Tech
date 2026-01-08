@@ -20,7 +20,7 @@
 h1{
   font-size: 48px;
   line-height: 68.25px;
-  font-weight: 700;
+  font-weight: bold;
   font-family: var(--font-raleway);
 }
 
@@ -50,4 +50,41 @@ p{
   font-family: var(--font-manrope);
   line-height: 30px;
   font-weight: 500;
+}
+
+.button-primary {
+  padding: 16px 36px;
+  background: #3E6EB4;
+  border-radius: 160px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-raleway);
+  line-height: 20px;
+   border: none;
+}
+
+.button-secondary{
+    padding: 15px 50px;
+  background: #3E6EB4;
+  border-radius: 160px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-raleway);
+  line-height: 20px;
+}
+
+
+.section-padding-block{
+  padding:70px 0;
+}
+
+.d-block{
+  display: block;
+}
+
+.mb-30{
+  margin-bottom: 30px;
 }
