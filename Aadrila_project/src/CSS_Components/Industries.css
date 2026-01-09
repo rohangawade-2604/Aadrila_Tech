@@ -1,0 +1,19 @@
+.industries-section {
+    position: relative;
+   
+}
+
+.circle{
+    position: absolute;
+    z-index: 1;
+}
+
+.AI-content{
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+}
+
+
+
+
