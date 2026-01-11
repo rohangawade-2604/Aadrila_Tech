@@ -24,7 +24,7 @@ h1{
 
 h2{
   font-size: 48px !important;
-  font-weight: semibold !important;
+  font-weight: 600 !important;
   font-family: var(--font-raleway);
   line-height: 100%;
 }
@@ -92,5 +92,13 @@ p{
 }
 
 .border{
-  border: 2px solid black;
+  border: 2px solid black !important; 
+}
+
+.position-relative{
+  position: relative;
+}
+
+.position-absolute{
+  position: absolute;
 }

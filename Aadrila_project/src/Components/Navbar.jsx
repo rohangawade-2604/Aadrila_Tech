@@ -4,6 +4,7 @@ import logo from "../assets/Images/logo-p.png";
 import LogoText from "../assets/Images/logo-name.png";
 import "../CSS_Components/Navbar.css";
 
+
 export const Navbar = ({
   scrollToSection,
   heroRef,
@@ -12,6 +13,8 @@ export const Navbar = ({
   blogsRef,
   contactRef,
 }) => {
+
+
   return (
     <section className='nav-sec'>
       <div className="container nav-container">
