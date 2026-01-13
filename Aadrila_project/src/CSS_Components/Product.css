@@ -1,5 +1,9 @@
 .product{
-    min-height: 857px;
+    min-height: 1775px;
+}
+
+.container-padding{
+    padding: 40px 0px 0px 0px;
 }
 
 .dot{
@@ -16,6 +20,9 @@
      background: linear-gradient(90deg, #3E6EB4, #CD6028);
      color: white;
      border: none;
+     font-family: var(--font-raleway);
+     font-weight: 700;
+     letter-spacing: 4px;
 }
 
 .sheet{
@@ -37,7 +44,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     z-index: 2;
+    min-height: 750px;
 }
 
 .feature{
@@ -51,5 +60,37 @@
 
 .FB-para{
     font-size: 20px;
+}
+
+.button-2{
+    display: flex;
+    gap: 50px;
+}
+
+/* ----------product - 2 div -------------*/
+.circle-3{
+    left: -5%;
+}
+.dot1{
+    left: 80%;
+    top: -2%;
+    z-index: 2;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.APD-2{
+    width: 45%;
+}
+
+.img-content-2{
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    min-height: 700px;
 }
 

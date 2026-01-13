@@ -13,7 +13,10 @@
    #3E6EB4
   ); 
 
+}
 
+.font-raleway{
+  font-family: var(--font-raleway);
 }
 h1{
   font-size: 48px !important;
