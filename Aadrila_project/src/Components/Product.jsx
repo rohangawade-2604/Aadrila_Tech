@@ -7,6 +7,7 @@ import circle3 from "../assets/Images/circle3.png"
 import dot1 from "../assets/Images/dot1.png"
 import books from "../assets/Images/books.png"
 import dot2 from "../assets/Images/dot2.png"
+import Doxtract from "../assets/Images/Doxtract.png"
 
 const Product = () => {
   return (
@@ -148,7 +149,7 @@ const Product = () => {
             </div>
 
             <div className="sheet-img">
-              <img src={sheet} alt="" className='sheet' />
+              <img src={Doxtract} alt="" className='sheet' />
 
             </div>
           </div>
