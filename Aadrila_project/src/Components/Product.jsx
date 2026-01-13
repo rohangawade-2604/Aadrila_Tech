@@ -66,8 +66,8 @@ const Product = () => {
               <img src={circle3} alt="" className='circle-3 position-absolute' />
             </div>
 
-            <div className="dot1 position-absolute">
-              <img src={dot1} alt="" className='' />
+            <div className=" position-relative">
+              <img src={dot1} alt="" className='position-absolute dot1' />
             </div>
           </div>
 
@@ -75,6 +75,7 @@ const Product = () => {
 
 
             <div className="APD-2 ">
+              
               <button className='btn-doc mb-20 '>DocPilot </button>
               <h2 className='f-z'>Streamline Document Workflows with Automation</h2>
               <p className='FB-para'>
