@@ -102,3 +102,7 @@ p{
 .position-absolute{
   position: absolute;
 }
+
+.mb-7{
+  margin-bottom: 4% ;
+}

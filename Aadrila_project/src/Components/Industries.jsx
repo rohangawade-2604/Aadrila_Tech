@@ -10,7 +10,7 @@ import lending from "../assets/Images/Lending_Icon.png"
 const Industries = () => {
   return (
     <>
-      <section class="section-padding-block">
+      <section class="section-padding-block mb-7">
         <div className="industries">
 
 
@@ -39,19 +39,19 @@ const Industries = () => {
 
                       <div className="growth-cards position-relative">
 
-                        <div className="card1 box-1 border position-absolute text-center ">
+                        <div className="card1 mb-20 box-1 border position-absolute text-center ">
                           <img src={health} alt=""  className='mb-20'/>
                           <h2 className='care'>HealthCare</h2>
                           <p className='care-para'>Streamline patient record management and ensure compliance with HIPAA standards.</p>
                         </div>
 
-                        <div className="card1 box-2 border position-absolute text-center">
+                        <div className="card1 box-2 mb-20 border position-absolute text-center">
                           <img src={lending} alt=""  className='mb-20'/>
                           <h2 className='care mb-20'>Lending</h2>
                           <p className='care-para'>Ensure faster loan approvals with fraud detection and instant verification.</p>
                         </div>
 
-                        <div className="card1 box-3 position-absolute text-center">
+                        <div className="card1 box-3 mb-20 position-absolute text-center">
                           <img src={insur} alt=""  className='mb-20'/>
                           <h2 className='care mb-20'>Insurance</h2>
                           <p className='care-para'>Automate claims processing with accurate document validation.</p>

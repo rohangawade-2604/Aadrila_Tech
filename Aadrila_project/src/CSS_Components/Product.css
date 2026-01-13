@@ -1,0 +1,55 @@
+.product{
+    min-height: 857px;
+}
+
+.dot{
+    left: -1%;
+}
+
+.circle-2{
+    right: -5%;
+}
+
+.btn-doc{
+    padding: 16px 24px;
+    border-radius: 50px;
+     background: linear-gradient(90deg, #3E6EB4, #CD6028);
+     color: white;
+     border: none;
+}
+
+.sheet{
+    min-height: 504px;
+    width: 601px;
+}
+
+.APD{
+    width: 40%;
+}
+
+.f-z{
+    font-size: 32px !important;
+    font-weight: bold !important;
+    line-height: 1.5;
+}
+
+.img-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.feature{
+    font-weight: bold;
+}
+
+.f-s-16{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.FB-para{
+    font-size: 20px;
+}
+

@@ -6,6 +6,7 @@ import Hero from './Components/Hero'
 import Industries from './Components/Industries'
 import Blog from './Components/Blog'
 import Contact from './Components/Contact'
+import Product from './Components/Product'
 
 function App() {
  
@@ -39,6 +40,10 @@ function App() {
 
       <section ref={industriesRef}>
         <Industries/>
+      </section>
+
+      <section>
+        <Product/>
       </section>
 
       <section ref={blogsRef}>
