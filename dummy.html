@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Carousel</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel {
+            width: 600px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel">
+        <div class="slides">
+            <img src="https://picsum.photos/id/237/200/300" />
+            <img src="https://picsum.photos/id/237/200/300" />
+            <img src="https://picsum.photos/id/237/200/300" />
+            <img src="https://picsum.photos/id/237/200/300" />
+            <img src="https://picsum.photos/id/237/200/300" />
+            <img src="https://picsum.photos/id/237/200/300" />
+            <img src="https://picsum.photos/id/237/200/300" />
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    <script>
+
+        let index = 0;
+        const slides = document.querySelector(".slides");
+        const totalSlides = slides.children.length;
+
+        document.querySelector(".next").addEventListener("click", () => {
+            index = (index + 1) % totalSlides;
+            slides.style.transform = `translateX(-${index * 600}px)`;
+        });
+
+        document.querySelector(".prev").addEventListener("click", () => {
+            index = (index - 1 + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${index * 600}px)`;
+        });
+
+    </script>
+</body>
+
+</html>

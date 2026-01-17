@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+            /* display: none; */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        
+
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="openmodal">Open Modal</button>
+
+    <div class="modal" id="modal">
+        <div class="modal-content"  id="modal">
+            <h2>Modal Title</h2>
+            <p>This is a simple modal window.</p>
+            <button id="closemodal">close modal</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    const openbtn = document.getElementById('openmodal');
+    const closebtn = document.getElementById('closemodal');
+    const modal = document.getElementById('modal')
+
+    openbtn.addEventListener('click', () => {
+        modal.classList.add("open");
+    })
+
+    closebtn.addEventListener('click', () => {
+        modal.classList.remove("open");
+    })
+</script>
+
+</html>

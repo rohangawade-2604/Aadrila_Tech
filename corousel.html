@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            height: 800px;
+            width: 65%;
+            margin: auto;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: 1s ;
+        }
+
+        .nav{
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .nav button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <img src="https://picsum.photos/id/237/1000/500" alt="" class="slide">
+        <img src="https://picsum.photos/id/238/1000/500" alt="" class="slide">
+        <img src="https://picsum.photos/id/239/1000/500" alt="" class="slide">
+        <img src="https://picsum.photos/id/240/1000/500" alt="" class="slide">
+    </main>
+
+    <div class="nav">
+        <button onclick="goprev()">prev</button>
+        <button onclick="gonext()">next</button>
+    </div>
+
+
+    <script>
+        const slides = document.querySelectorAll('.slide')
+        var counter = 0;
+
+        slides.forEach(
+            (slide, index) => {
+                slide.style.left = `${index * 100}%`
+            }
+        )
+
+        const gonext = () => {
+            counter++;
+            slideImage()
+        }
+
+        const goprev = () => {
+            counter--;
+            slideImage()
+        }
+        const slideImage = () => {
+            slides.forEach(
+                (slide) => {
+                    slide.style.transform = `translateX(-${counter * 100}%)`
+                }
+            )
+        }
+    </script>
+</body>
+</html>
