@@ -1,7 +1,7 @@
 import React from 'react'
 import "../CSS_Components/Hero.css"
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <>
       <section className="hero-section section-padding-block">
@@ -28,4 +28,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+

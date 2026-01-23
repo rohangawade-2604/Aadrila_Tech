@@ -2,11 +2,11 @@ import React from 'react'
 import {useRef} from 'react'
 import './App.css'
 import { Navbar } from './Components/Navbar'
-import Hero from './Components/Hero'
-import Industries from './Components/Industries'
-import Blog from './Components/Blog'
-import Contact from './Components/Contact'
-import Product from './Components/Product'
+import {Hero} from './Components/Hero'
+import {Industries} from './Components/Industries'
+import {Blog} from './Components/Blog'
+import {Contact} from './Components/Contact'
+import {Product} from './Components/Product'
 
 function App() {
  

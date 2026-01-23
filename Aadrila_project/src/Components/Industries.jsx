@@ -7,7 +7,7 @@ import health from "../assets/Images/Healthcare_Icon.png"
 import insur from "../assets/Images/Insurance_Icon.png"
 import lending from "../assets/Images/Lending_Icon.png"
 
-const Industries = () => {
+export const Industries = () => {
   return (
     <>
       <section class="section-padding-block mb-7">
@@ -71,5 +71,3 @@ const Industries = () => {
     </>
   )
 }
-
-export default Industries

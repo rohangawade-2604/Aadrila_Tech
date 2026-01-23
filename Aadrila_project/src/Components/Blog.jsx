@@ -4,7 +4,7 @@ import group from "../assets/Images/Group-dots.png"
 import grpdot from "../assets/Images/grpdot.png"
 import design from "../assets/Images/design.png"
 
-const Blog = () => {
+export const Blog = () => {
   return (
     <>
       <div className="Blogs">
@@ -28,7 +28,7 @@ const Blog = () => {
           </div>
 
 
-          <div className="row row-col-3 container-padding">
+          <div className="row row-col-3 container-padding mb-20">
 
             <div className="col">
               <div className="card-wrapper position-relative ">
@@ -88,4 +88,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+

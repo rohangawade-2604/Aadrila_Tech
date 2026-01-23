@@ -1,0 +1,8 @@
+.location-head{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-decoration: underline;
+    gap: 10px;
+
+}

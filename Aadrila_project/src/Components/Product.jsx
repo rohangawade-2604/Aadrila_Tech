@@ -9,7 +9,7 @@ import books from "../assets/Images/books.png"
 import dot2 from "../assets/Images/dot2.png"
 import Doxtract from "../assets/Images/Doxtract.png"
 
-const Product = () => {
+export const Product = () => {
   return (
     <>
       <div className="product section-padding-block">
@@ -163,4 +163,4 @@ const Product = () => {
   )
 }
 
-export default Product
+ 
