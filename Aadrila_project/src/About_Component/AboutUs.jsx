@@ -1,6 +1,7 @@
 import React from 'react'
 import "../About_Css/AboutUS.css"
 import logo from "../assets/Images/about_logo.png"
+import {Contact} from "../Components/Contact"
 
 export const AboutUs = () => {
     return (
@@ -48,6 +49,11 @@ export const AboutUs = () => {
 
                     </div>
                 </div>
+            </section>
+
+
+            <section>
+                <Contact/>
             </section>
         </>
     )
