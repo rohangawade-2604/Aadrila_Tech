@@ -51,6 +51,7 @@ function App() {
 
           {/* ABOUT */}
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/" element={<Hero />} />
 
         </Routes>
       </div>

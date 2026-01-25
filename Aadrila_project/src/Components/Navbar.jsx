@@ -7,7 +7,6 @@ import "../CSS_Components/Navbar.css";
 
 export const Navbar = ({
   scrollToSection,
-  heroRef,
   industriesRef,
   productRef,
   blogsRef,
@@ -27,7 +26,9 @@ export const Navbar = ({
 
           <nav>
             <ul>
-              <li><Link onClick={() => scrollToSection(heroRef)}>Home</Link></li>
+                <li>
+                <Link to="/">Home</Link>
+              </li>
               <li><Link onClick={() => scrollToSection(industriesRef)}>Industries</Link></li>
               <li><Link onClick={() => scrollToSection(blogsRef)}>Blogs</Link></li>
               <li><Link onClick={() => scrollToSection(productRef)}>Products</Link></li>
