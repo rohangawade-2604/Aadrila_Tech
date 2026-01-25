@@ -7,15 +7,15 @@ import location from '../assets/Images/location.png'
 export const Contact = () => {
   return (
     <>
-      <div className="container-fluid section-padding-block">
-
-        <div className="dotimg">
-          <img src={dotcontact} alt="" />
-        </div>
+      <div className="container-fluid section-padding-block ">
 
         <div className="container container-padding">
 
-          <div className="row cols-md-2">
+          <div className="dotimg ">
+            <img src={dotcontact} alt="" />
+          </div>
+
+          <div className="row cols-md-2 ">
 
             <div className="col">
               <h2>Contact US</h2>
@@ -44,27 +44,45 @@ export const Contact = () => {
             </div>
 
 
-            <div className="col">
+            <div className="col w-100 position-relative ">
 
-              <div className="contact-form  p-5">
+              <div className="contact-form p-5 rounded-3 w-100 position-absolute">
                 <form action="" className=''>
-                  <div className="name-email">
-                    <input type="text" placeholder='Name' className='mb-20 p-2 w-50 p-2 w-50 rounded-2 ' />
-                    <input type="email" placeholder='Email' className='mb-20 p-2 w-50 p-2 w-50 rounded-2' />
+                  <div className="row mb-3">
+                    <div className="col-md-6 mb-3 mb-md-0">
+                      <input type="text" placeholder="Name" className="form-control p-2 rounded-2" />
+                    </div>
+
+                    <div className="col-md-6">
+                      <input type="email" placeholder="Email" className="form-control p-2 rounded-2" />
+                    </div>
                   </div>
 
-                  <div className="company-number">
-                    <input type="text" placeholder='Company' className='mb-20 p-2 w-50 p-2 w-50 rounded-2' />
-                    <input type="text" placeholder='Phone Number' className='mb-20 p-2 w-50 p-2 w-50 rounded-2' />
+                  <div className="row mb-3">
+                    <div className="col-md-6 mb-3 mb-md-0">
+                      <input type="text" placeholder="Company" className="form-control p-2 rounded-2 " />
+                    </div>
+
+                    <div className="col-md-6">
+                      <input type="text" placeholder="Phone Number" className="form-control p-2 rounded-2" />
+                    </div>
                   </div>
 
-                  <div className="inquiry">
-                    <input type="text" placeholder='Inquiry Type' className='mb-20 p-2 w-100 p-2 w-50 rounded-2' />
+
+                  <div className="row mb-3 ">
+                    <div className="col-12 col-md-6 w-100">
+                      <input type="text" placeholder="Inquiry Type" className="form-control p-2  rounded-2" />
+                    </div>
                   </div>
 
-                  <textarea name="message" id="message" cols="30" rows="5" placeholder='Message' className='mb-20 p-2 w-100 p-2 w-50 rounded-2'></textarea>
+                  <div className="row">
+                    <div className="col-12">
+                      <textarea name="message" id="message" rows="5" placeholder="Message" className="form-control w-100 p-2 rounded-2"></textarea>
+                    </div>
+                  </div>
 
-                  <button className='button-secondary'>Send Enquiry</button>
+
+                  <button className='button-enquiry mt-3'>Send Enquiry</button>
                 </form>
               </div>
 

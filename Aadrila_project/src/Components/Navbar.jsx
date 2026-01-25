@@ -32,7 +32,9 @@ export const Navbar = ({
               <li><Link onClick={() => scrollToSection(blogsRef)}>Blogs</Link></li>
               <li><Link onClick={() => scrollToSection(productRef)}>Products</Link></li>
               <li><Link onClick={() => scrollToSection(contactRef)}>Contact</Link></li>
-              <li><Link onClick={() => scrollToSection(contactRef)}>About US</Link></li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
             </ul>
           </nav>
 
