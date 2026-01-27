@@ -41,7 +41,7 @@ export const Navbar = ({
 
           <div className="button">
             <button className='button-primary'>Get a Demo</button>
-            <button></button>
+            
           </div>
         </div>
       </div>
